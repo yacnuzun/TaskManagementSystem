@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="SendMail" asp-controller="SendMail" method="post">
+  
+    <legend>Send a Mail</legend>
+    <div class="mb-3">
+      <label  class="form-label">Email</label>
+      <input type="text" name="Email" class="form-control" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Contacts</label>
+      <input type="text" name="Contacts" class="form-control" placeholder="Contacts">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Password</label>
+      <input type="text" name="Password" class="form-control" placeholder="Password">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">SenderMail</label>
+      <input type="text" name="SenderMail" class="form-control" placeholder="SenderMail">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Subject</label>
+      <input type="text" name="Subject" class="form-control" placeholder="Subject">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Body</label>
+      <input type="text" name="Body" class="form-control" placeholder="Body">
+    </div>
+    <button type="submit" name="Contacts" class="btn btn-primary">Submit</button>
+</form>
